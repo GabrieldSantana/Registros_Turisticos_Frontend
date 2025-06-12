@@ -5,7 +5,7 @@ import * as Location from 'expo-location';
 import * as ImagePicker from 'expo-image-picker';
 import styles from '../styles/styles';
 
-const API_URL = 'http://172.26.39.83:3000';
+const API_URL = 'http://172.26.45.107:3000';
 
 export default function AddPlaceScreen({ navigation }) {
   const [name, setName] = useState('');
@@ -68,7 +68,7 @@ export default function AddPlaceScreen({ navigation }) {
           'Content-Type': 'multipart/form-data',
         },
       });
-      navigation.navigate('Home');
+      navigation.navigate('Inicio');
     } catch (error) {
       Alert.alert('Erro ao salvar local', error.message);
     }

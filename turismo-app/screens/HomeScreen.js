@@ -4,7 +4,7 @@ import { FAB, Card, Title, Paragraph } from 'react-native-paper';
 import { useNavigation } from '@react-navigation/native';
 import styles from '../styles/styles';
 
-const API_URL = 'http://172.26.39.83:3000';
+const API_URL = 'http://172.26.45.107:3000';
 
 export default function HomeScreen() {
   const [places, setPlaces] = useState([]);
@@ -37,7 +37,7 @@ export default function HomeScreen() {
           </Card>
         )}
       />
-      <FAB icon="plus" style={styles.fab} onPress={() => navigation.navigate('Add Local')} />
+      <FAB icon="plus" style={styles.fab} onPress={() => navigation.navigate('Adicionar Local')} />
       <FAB icon="map" style={styles.mapButton} onPress={() => navigation.navigate('Mapa')} />
     </View>
   );

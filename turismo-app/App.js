@@ -13,7 +13,7 @@ export default function App() {
     <PaperProvider>
       <NavigationContainer>
         <Stack.Navigator>
-          <Stack.Screen name="Início" component={HomeScreen} />
+          <Stack.Screen name="Inicio" component={HomeScreen} />
           <Stack.Screen name="Adicionar Local" component={AddPlaceScreen} />
           <Stack.Screen name="Mapa" component={MapScreen} />
         </Stack.Navigator>
